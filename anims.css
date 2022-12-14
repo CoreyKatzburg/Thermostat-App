@@ -1,0 +1,59 @@
+.fade-in {
+	animation: fadeIn 0.8s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translate3d(-100px, 0px, 0px);
+	}
+
+	100% {
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+.loginBtn-anim:hover {
+	animation: loginBtnHov 0.4s ease 0s 1 normal forwards;
+}
+
+.loginBtn-anim:not(:hover) {
+   animation: loginBtnNoHov 0.4s ease 0s 1 normal forwards;
+	opacity: 1;
+}
+
+@keyframes loginBtnHov {
+	0% {
+		transform: scale(0.92);
+		background-color: #3E90CC;
+	}
+
+	100% {
+		transform: scale(1);
+		background-color: #2B70A1;
+	}
+}
+
+@keyframes loginBtnNoHov {
+	0% {
+		transform: scale(1);
+		background-color: #2B70A1;
+	}
+
+	100% {
+		transform: scale(0.92);
+		background-color: #3E90CC;
+	}
+}
+
+@keyframes fadeInDelayed {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

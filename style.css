@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Roboto+Slab:wght@400;500&display=swap');
+
+* {
+   margin: 0;
+   border: 0;
+   padding: 0;
+   font-family: 'Roboto Mono';
+}
+
+.flex-container {
+   height: 64px;
+   background-color: #592941;
+
+   margin-bottom: 32px;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap; /*Default*/
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.homeBtn  {
+   cursor: pointer;
+   
+   background-color: #519872;
+
+   width: 48px;
+   height: 48px;
+
+   margin-right: 16px;
+}
+
+.flex-item-text {
+   color: #24b985;
+
+   font-size: 18px;
+   font-family: monospace;
+   font-weight: bold;
+
+   margin-left: 6px;
+}
+
+.flex2-container {
+   /*height: 128px; - Isn't needed, size works automatically*/
+   /*background-color: #404040;*/
+   background-color: white;
+   
+   margin-top: 20vh;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap; /*Default*/
+   align-items: center;
+   justify-content: space-between;
+}
+
+.flex2-item-input {
+   font-size: 18px;
+
+   height: 32px;
+   width: 360px;
+
+   text-align: center;
+
+   margin-top: 4px;
+
+   padding: 1px;
+   border-width: 2px;
+   border-style: solid;
+   border-radius: 8px;
+}
+
+.flex2-item-label {
+   font-size: 18px;
+
+   height: 24px;
+   width: 360px;
+
+   text-align: left;
+
+   margin-top: 10px;
+
+   padding: 1px;
+   border-style: solid;
+   border-radius: 6px;
+}
+
+.flex2-item-input::placeholder {
+   color: #353535;
+   opacity: 0.4;
+}
+
+.loginBtn {
+   appearance: button;
+   font-size: 48px;
+   font-weight: 500;
+
+   margin-top: 48px;
+   margin-bottom: 24px;
+
+   padding: 8px;
+   padding-left: 48px;
+   padding-right: 48px;
+
+   border-style: solid;
+   border-radius: 8px;
+
+   text-decoration: none;
+
+   cursor: pointer;
+}
+
+#label1 {
+   font-size: 36px;
+   
+   height: 48px;
+
+   text-align: center;
+
+   margin-bottom: 128px;
+   padding: 1px;
+   border-style: solid;
+   border-radius: 6px;
+}
+
+input:after {
+   border-color: red;
+}
