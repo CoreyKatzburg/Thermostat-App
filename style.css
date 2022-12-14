@@ -126,6 +126,6 @@
    border-radius: 6px;
 }
 
-input:after {
+.input-anim:after {
    border-color: red;
 }

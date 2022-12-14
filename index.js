@@ -4,6 +4,6 @@ function loginPressed(){
 }
 
 function homeBtnPressed(){
-   window.location='index.html';
+   window.location='main.html';
    clearInterval(Interval);
 }

@@ -1,3 +1,5 @@
+/* Main page fade in animation */
+
 .fade-in {
 	animation: fadeIn 0.8s;
 }
@@ -5,13 +7,15 @@
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-		transform: translate3d(-100px, 0px, 0px);
+		transform: translateX(-100px);
 	}
 
 	100% {
-		transform: translate3d(0px, 0px, 0px);
+		transform: translateX(0px);
 	}
 }
+
+/* Log in button animation */
 
 .loginBtn-anim:hover {
 	animation: loginBtnHov 0.4s ease 0s 1 normal forwards;
@@ -46,25 +50,53 @@
 	}
 }
 
-@keyframes fadeInDelayed {
+/* Username/Password when highlighted Animation */
+
+   .up-anim-highlight:focus {
+	animation: upAnimFocus 0.4s;
+	outline: 0;
+
+	border-width: 5px;
+	border-color: #30C5FF;
+}
+
+	.up-anim-highlight:not(:focus) {
+	animation: upAnimNoFocus 0.4s;
+	
+	border-width: 2px;
+	border-color: black;
+}
+
+@keyframes upAnimFocus {
 	0% {
-		opacity: 0;
-		transform: translateX(-100px);
+		padding: 1px;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 8px;
+		border-color: black;
 	}
 
 	100% {
-		opacity: 1;
-		transform: translateX(0);
+		border-width: 5px;
+		border-color: #30C5FF;
 	}
 }
 
-/* Usrnme Pswrd Animation */
-
-.up-anim:focus {
-	border-width: 5px;
-	border-color: #30C5FF;
-	outline: 0;
+@keyframes upAnimNoFocus {
+	0% {
+		border-width: 5px;
+		border-color: #30C5FF;
+	}
+	100% {
+		padding: 1px;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 8px;
+		border-color: black;
+	}
 }
+
+/* Second page fade in animation */
 
 .second-fade-in {
 	animation: secondFadeIn 1s;
