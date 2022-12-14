@@ -57,3 +57,25 @@
 		transform: translateX(0);
 	}
 }
+
+/* Usrnme Pswrd Animation */
+
+.up-anim:focus {
+	border-width: 5px;
+	border-color: #30C5FF;
+	outline: 0;
+}
+
+.second-fade-in {
+	animation: secondFadeIn 1s;
+}
+
+@keyframes secondFadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
