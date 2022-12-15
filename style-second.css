@@ -1,0 +1,25 @@
+.temp-flex {
+   background-color: green;
+
+   width: 100vw;
+   height: 256px;
+
+   display: flex;
+   flex-direction: column;
+
+   justify-content: center;
+   align-content: center;
+}
+
+.temp-item {
+   font-size: 64px;
+   text-align: center;
+}
+
+#temp-item-1 {
+   background-color: aqua;
+}
+
+#temp-item-2 {
+   background-color: orange;
+}
