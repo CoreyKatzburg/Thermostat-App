@@ -29,24 +29,28 @@
 @keyframes loginBtnHov {
 	0% {
 		transform: scale(0.92);
-		background-color: #3E90CC;
+		/* background-color: #3E90CC; */
+		opacity: 1;
 	}
 
 	100% {
 		transform: scale(1);
-		background-color: #2B70A1;
+		/* background-color: #2B70A1; */
+		opacity: 0.875;
 	}
 }
 
 @keyframes loginBtnNoHov {
 	0% {
 		transform: scale(1);
-		background-color: #2B70A1;
+		/* background-color: #2B70A1; */
+		opacity: 0.875;
 	}
 
 	100% {
 		transform: scale(0.92);
-		background-color: #3E90CC;
+		/* background-color: #3E90CC; */
+		opacity: 1;
 	}
 }
 
