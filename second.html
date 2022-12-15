@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-second.css">
     <link rel="stylesheet" href="anims.css">
-    <script src="index.js"></script>
+    <script src="temperature.js"></script>
 </head>
 <body>
    <div class="flex-container">
@@ -16,7 +16,11 @@
    <div class="temp-flex">
       <p class="temp-item" id="temp-item-1">Temp</p>
       <br><br>
-      <p class="temp-item" id="temp-item-2">68&#176;F</p>
+      <div class="temp-subflex">
+         <img class="temp-item subitem-anim" id="temp-subitem-1" src="arrow_down.png" alt="arrow_up.png" onclick="tempDecrease()">
+         <p class="temp-item" id="temp-subitem-2">68&#176;F</p>
+         <img class="temp-item subitem-anim" id="temp-subitem-3" src="arrow_up.png" alt="arrow_up.png" onclick="tempIncrease()">
+      </div>
    </div>
 
 </body>
