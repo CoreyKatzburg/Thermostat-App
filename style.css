@@ -106,7 +106,7 @@
    opacity: 0.4;
 }
 
-.loginBtn {
+#loginBtn-1 {
    appearance: button;
    font-size: 48px;
    font-weight: 500;
@@ -122,6 +122,28 @@
 
    border-style: solid;
    border-radius: 8px;
+
+   text-decoration: none;
+
+   cursor: pointer;
+}
+
+#small-login-out-Btn {
+   appearance: button;
+   font-size: 16px;
+   font-weight: 500;
+
+   background-color: #f5f5f5;
+
+   /* margin-top: 24px;
+   margin-bottom: 12px; */
+
+   padding: 4px;
+   padding-left: 24px;
+   padding-right: 24px;
+
+   /* border-style: solid;
+   border-radius: 8px; */
 
    text-decoration: none;
 

@@ -5,27 +5,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="anims.css">
     <script src="temperature.js"></script>
+    <script src="login.js"></script>
 </head>
 <body>
 
     <div class="flex-container">
         <p class="flex-item-text fade-in">Home Thermostat App</p>
-
-        <img onclick="homeBtnPressed()" class="flex-item-2, homeBtn" id="homeBtn2" src="homebtn.png" alt="home.png">
+        <button onclick="loginPressed()" class="loginBtn-anim" id="small-login-out-Btn">Log In</button>
     </div>
 
     <div class="flex2-container">
         <h1 class="flex2-item-label fade-in" id="label1">Home Thermostat</h1>
-
         <p class="flex2-item-label fade-in">Username</p>
-        
-        <input type="email" class="flex2-item-input fade-in up-anim up-anim-highlight" placeholder="Username..."></input>
-
+        <input type="email" class="flex2-item-input fade-in up-anim up-anim-highlight" id="username" placeholder="Username..."></input>
         <p class="flex2-item-label fade-in">Password</p>
-
-        <input type="password" class="flex2-item-input fade-in up-anim up-anim-highlight" placeholder="Password..."></input>
-
-        <button onclick="loginPressed()" class="loginBtn loginBtn-anim">Log In</button>
+        <input type="password" class="flex2-item-input fade-in up-anim up-anim-highlight" id="password" placeholder="Password..."></input>
+        <button onclick="loginPressed()" class="loginBtn-anim" id="loginBtn-1">Log In</button>
     </div>
 
 </body>

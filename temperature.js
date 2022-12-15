@@ -1,9 +1,3 @@
-//Log in button
-
-function loginPressed(){
-   window.location="second.html";
-}
-
 //Home button
 
 function homeBtnPressed(){
@@ -23,12 +17,12 @@ function tempIncrease() {
 
    if(temp > 75) {
       document.getElementById("temp-subitem-2").style.color = "red";
-   } else if(temp > 66 && temp < 76) {
+   } else if(temp > 65 && temp < 76) {
       document.getElementById("temp-subitem-2").style.color = "black";
    }
 
-   if(temp == 81) {
-      window.alert("Warning\nYour temperature is above the recommended maximum");
+   if(temp === 81) {
+      window.alert("Warning\nThe temperature is above the recommended maximum");
    }
 }
 
@@ -41,11 +35,11 @@ function tempDecrease() {
 
    if(temp < 66) {
       document.getElementById("temp-subitem-2").style.color = "blue";
-   } else if(temp > 66 && temp < 76) {
+   } else if(temp > 65 && temp < 76) {
       document.getElementById("temp-subitem-2").style.color = "black";
    }
 
-   if (temp == 61) {
-      window.alert("Warning\nYour temperature is below the recommended minimum");
+   if (temp === 61) {
+      window.alert("Warning\nThe temperature is below the recommended minimum");
    }
 }
