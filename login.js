@@ -13,5 +13,5 @@ const password = document.getElementById("password").value;
 }
 
 function logoutPressed() {
-   window.location = "main.html";
+   window.location = "index.html";
 }
