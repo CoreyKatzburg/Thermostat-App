@@ -1,7 +1,7 @@
 //Home button
 
 function homeBtnPressed(){
-   window.location="main.html";
+   window.location="index.html";
 }
 
 //Temp buttons
